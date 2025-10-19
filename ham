@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OptiSigns Virtual Screen</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      width: 100%;
+      overflow: hidden;
+      background: #2B2B2B;
+    }
+    .wrapper {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    iframe {
+      position: absolute;
+      top: 50%;
+      left: 87%;
+      width: 100vh; /* rotated width */
+      height: 100vw; /* rotated height */
+      border: none;
+      transform: translate(-50%, -50%) rotate(-90deg);
+      transform-origin: center center;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <iframe
+      src="https://virtualscreen.optisigns.com/#VTJGc2RHVmtYMSsvMmM2SC93QXN4ay82UlpPM1B5eEZuQndjSU9OZjh0d29WWkdHanYvQmExajNSc2lvQmJEYjlTenBDN0lkTG1Xcmh2SXhLRVRIYVE9PQ=="
+      allowfullscreen>
+    </iframe>
+  </div>
+</body>
+</html>
